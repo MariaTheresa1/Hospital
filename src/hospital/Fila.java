@@ -1,5 +1,6 @@
 package hospital;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Fila {
@@ -7,7 +8,7 @@ public class Fila {
 	private List<Paciente> pacientes;
 
 	public Fila() {
-		pacientes = null;
+		pacientes = new ArrayList<>();;
 	}
 	
 	public List<Paciente> getPacientes() {

@@ -1,5 +1,6 @@
 package hospital;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Paciente extends Pessoa {
@@ -11,7 +12,7 @@ public class Paciente extends Pessoa {
 	public Paciente(String CPF, String nome, String dataNascimento, String telefone, String endereco, String email, String nomeDoConvenio) {
 		super(CPF, nome, dataNascimento, telefone, endereco, email);
 		this.nomeDoConvenio = nomeDoConvenio;
-		sintomas = null;
+		this.sintomas = new ArrayList<>();
 	}
 	
 	public String getNomeDoConvenio() {
@@ -36,5 +37,6 @@ public class Paciente extends Pessoa {
 	
 	public void setDiagnostico(String diagnostico) {
 		this.diagnostico = diagnostico;
-	}
+	}	
+	
 }

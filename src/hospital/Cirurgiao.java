@@ -1,5 +1,6 @@
 package hospital;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public final class Cirurgiao extends Medico {
@@ -11,7 +12,7 @@ public final class Cirurgiao extends Medico {
 			Double salario, String CRM, Sala sala, String especialidade) {
 		super(CPF, nome, dataNascimento, telefone, endereco, email, salario, CRM, sala);
 		this.especialidade = especialidade;
-		cirurgias = null;
+		cirurgias = new ArrayList<>();;
 	}
 
 	public List<Cirurgia> getCirurgias() {

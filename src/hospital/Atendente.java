@@ -1,5 +1,7 @@
 package hospital;
 
+import java.util.ArrayList;
+
 public class Atendente extends Funcionario {
 
 	private Integer quantidadeDeHorasExtras;
@@ -20,5 +22,9 @@ public class Atendente extends Funcionario {
 
 	void iniciarAtendimento() {
 		System.out.println("Olá! Você já tem cadastro ou é a primeira vez aqui?");
+	}
+	
+	final Boolean cadastrarPaciente(ArrayList<Paciente> pacientes) {
+		return true;
 	}
 }

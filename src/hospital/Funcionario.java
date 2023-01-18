@@ -1,5 +1,6 @@
 package hospital;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public abstract class Funcionario extends Pessoa {
@@ -10,7 +11,7 @@ public abstract class Funcionario extends Pessoa {
 	public Funcionario(String CPF, String nome, String dataNascimento, String telefone, String endereco, String email, Double salario) {
 		super(CPF, nome, dataNascimento, telefone, endereco, email);
 		this.salario = salario;
-		atendimentos = null;
+		atendimentos = new ArrayList<>();
 	}
 
 	public Double getSalario() {
