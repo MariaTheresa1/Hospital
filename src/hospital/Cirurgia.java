@@ -1,25 +1,23 @@
 package hospital;
 
-import java.util.Date;
-
 public class Cirurgia {
 	
-	private Date data;
+	private String data;
 	private Paciente paciente;
 	private String descricao;
 	
-	public Cirurgia(Date data, Paciente paciente, String descricao) {
+	public Cirurgia(String data, Paciente paciente, String descricao) {
 		super();
 		this.data = data;
 		this.paciente = paciente;
 		this.descricao = descricao;
 	}
 
-	public Date getData() {
+	public String getData() {
 		return data;
 	}
 
-	public void setData(Date data) {
+	public void setData(String data) {
 		this.data = data;
 	}
 

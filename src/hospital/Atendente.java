@@ -27,4 +27,13 @@ public class Atendente extends Funcionario {
 	final Boolean cadastrarPaciente(ArrayList<Paciente> pacientes) {
 		return true;
 	}
+
+	@Override
+	public String toString() {
+		return "CPF: " + getCPF() + ", Nome: " + getNome()	
+				+ ", Quantidade De Horas Extras: " + quantidadeDeHorasExtras + ", Salario: " + getSalario()
+				 + "\nAtendimentos: " + getAtendimentos() + "\n";
+	}
+	
+	
 }

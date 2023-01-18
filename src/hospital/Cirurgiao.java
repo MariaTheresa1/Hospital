@@ -31,4 +31,8 @@ public final class Cirurgiao extends Medico {
 		this.especialidade = especialidade;
 	}
 	
+	public Cirurgia realizarCirurgia(String data, Paciente paciente, String descricao) {
+		Cirurgia cirurgia = new Cirurgia(data, paciente, descricao);
+		return cirurgia;
+	}
 }

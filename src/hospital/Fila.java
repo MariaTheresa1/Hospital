@@ -6,7 +6,7 @@ import java.util.List;
 public class Fila {
 	
 	private List<Paciente> pacientes;
-
+	
 	public Fila() {
 		pacientes = new ArrayList<>();;
 	}
@@ -18,5 +18,12 @@ public class Fila {
 	public void setPacientes(Paciente paciente) {
 		this.pacientes.add(paciente);	
 	}	
+	
+	void exibirFila() {
+		System.out.println("Fila");
+		for(Paciente paciente: pacientes){
+			System.out.println(paciente);
+		}
+	}
 	
 }

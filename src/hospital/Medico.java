@@ -46,6 +46,10 @@ public abstract class Medico extends Funcionario {
 		System.out.println("Olá! O que você está sentindo?");
 	}
 	
+	void emitirAtestado() {
+		
+	}
+	
 	@Override
 	public boolean equals(Object obj) {
 		if (this == obj)

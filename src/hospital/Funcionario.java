@@ -31,4 +31,5 @@ public abstract class Funcionario extends Pessoa {
 	}
 	
 	abstract void iniciarAtendimento();
+	
 }

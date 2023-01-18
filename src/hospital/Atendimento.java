@@ -1,18 +1,16 @@
 package hospital;
 
-import java.util.Date;
-
 public class Atendimento {
 	
-	private Date data;
+	private String data;
 	private String descricao;
 	
-	public Atendimento(Date data, String descricao){
+	public Atendimento(String data, String descricao){
 		this.data = data;
 		this.descricao = descricao;
 	}
 	
-	public Date getData() {
+	public String getData() {
 		return data;
 	}
 
@@ -22,6 +20,11 @@ public class Atendimento {
 	
 	public void setDescricao(String descricao) {
 		this.descricao = descricao;
+	}
+
+	@Override
+	public String toString() {
+		return "Atendimento [Data: " + data + ", Descricao: " + descricao + "]";
 	}
 	
 }

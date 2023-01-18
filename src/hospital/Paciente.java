@@ -39,4 +39,14 @@ public class Paciente extends Pessoa {
 		this.diagnostico = diagnostico;
 	}	
 	
+	void realizarPagamento() {
+		
+	}
+	
+	@Override
+	public String toString() {
+	    return "CPF: " + getCPF() + "; Nome: " + getNome();
+	}
+	
+	
 }

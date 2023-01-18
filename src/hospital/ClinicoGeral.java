@@ -17,5 +17,8 @@ public final class ClinicoGeral extends Medico {
 	public void setEncaminhamento(String encaminhamento) {
 		this.encaminhamento = encaminhamento;
 	}
-
+	
+	public void realizarEncaminhamento() {
+		
+	}
 }

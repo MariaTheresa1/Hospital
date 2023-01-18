@@ -18,4 +18,7 @@ public final class Neuro extends Medico {
 		this.exameNeurologico = exameNeurologico;
 	}
 	
+	void realizarExameNeurologico() {
+		
+	}
 }
